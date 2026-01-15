@@ -38,7 +38,7 @@ body{
     margin: 50px 0;
 }
 .brand{
-    font-size: 24px;
+    font-size: 1.75rem;
     font-weight: 700;
 }
 .nav-links{
@@ -47,6 +47,13 @@ body{
 .nav-link{
     text-decoration: none;
     font-size: 400;
+    margin-right: 34px;
+}
+/* resonsive navbar */
+.responsive-navbar{
+    display: none;
+}
+.responsive-navbar .brand{
     margin-right: 34px;
 }
 
@@ -60,7 +67,7 @@ body{
     max-width: 582px;
 }
 .banner-title{
-    font-size: 52px;
+    font-size: 3.25rem;
     font-weight: 700;
 }
 .banner-description{
@@ -71,4 +78,51 @@ body{
     background: url(../images/Circle\ design.svg);
     background-repeat: no-repeat;
     background-position: center ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px){
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links{
+        flex-direction: column;
+        text-align: center;
+    }
+    .cart{
+        display: block;
+        align-items: right;
+    }
+    
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner-image img{
+        width: 100%;
+    }
+    .banner-image{
+        background-size: contain;
+    }
+    .banner-title{
+        font-size: 1.85rem;
+    }
+    .banner-description{
+        font-size: 14px;
+    }
+    .banner .btn-primary{
+        margin-bottom: 50px;
+    }
+
 }
